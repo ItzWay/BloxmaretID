@@ -1,0 +1,160 @@
+
+    .toastDisable {
+        position: fixed;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        border-radius: 5px;
+        z-index: 1000;
+        font-size: 14px;
+        display: none;
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    .toastDisable.show {
+        display: block;
+        opacity: 1;
+    }
+    body {
+      height: 100vh;
+      margin: 0;
+      background-image: url(/img/background.png); 
+      background-size: cover; 
+      background-position: center center; 
+      background-repeat: no-repeat; 
+      background-attachment: fixed; 
+      color: #3b82f6;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    .recaptcha-box {
+      background: #476abd;
+      color: #000;
+      border: 1px solid #ffffff;
+      border-radius: 4px;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      box-shadow: 0 0 4px rgba(0,0,0,0.1);
+      width: 300px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .recaptcha-box input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    .recaptcha-logo {
+      margin-left: auto;
+      font-size: 10px;
+      text-align: center;
+    }
+
+    .recaptcha-logo img {
+      height: 20px;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0,0,0,0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+
+    .modal-content {
+      background: #1e293b;
+      color: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
+    }
+
+    .modal-content input {
+      margin-top: 15px;
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      font-size: 1rem;
+    }
+
+    .modal-content button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background-color: #3b82f6;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .alert {
+      display: none;
+      margin-top: 15px;
+      background-color: #2563eb33;
+      color: #bfdbfe;
+      padding: 10px 15px;
+      border-left: 4px solid #3b82f6;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.95rem;
+    }
+
+    .alert svg {
+      width: 20px;
+      height: 20px;
+      stroke: #3b82f6;
+    }
+
+    #question {
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    .fade-in {
+      opacity: 1;
+    }
+ @media (max-width: 400px) {
+  .modal-content {
+    padding: 24px 18px;
+    width: 95vw;
+  }
+
+  .modal-content h3 {
+    font-size: 1.1rem;
+  }
+
+  .modal-content input,
+  .modal-content button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .modal-content input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
