@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/dasboard/bloxmaret",
+      "source": "/dashboard/bloxmaret",
       "destination": "/main/bloxmaret.html"
     }
   ]
