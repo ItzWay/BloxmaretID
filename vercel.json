@@ -1,9 +1,10 @@
 {
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "rewrites": [
     {
-      "source": "/bloxmaret",
+      "source": "/drivers/amg",
       "destination": "/main/bloxmaret.html"
     }
-  ]
+  ],
+  "cleanUrls": true
 }
-
