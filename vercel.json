@@ -1,0 +1,6 @@
+{
+  "rewrites": [
+    { "source": "/", "destination": "/main/bloxmaret.html" },
+    { "source": "/bloxmaret", "destination": "/main/bloxmaret.html" }
+  ]
+}
