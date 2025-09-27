@@ -1,8 +1,15 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/main/bloxmaret.html",
+      "destination": "/dashboard/bloxmaret",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
-      "source": "/",
+      "source": "/main/bloxmaret",
       "destination": "/main/bloxmaret.html"
     }
   ]
