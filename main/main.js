@@ -28,7 +28,7 @@ function updateCopyright() {
   });
   const element = document.getElementById('copyright');
   if (element) {
-    element.textContent = `© 2025 Bloxmaret ID. All rights reserved. | ${formattedTime}`;
+    element.textContent = `© 2025 Bloxmaret ID. All rights reserved. Itzway | ${formattedTime}`;
   }
 }
 document.addEventListener("DOMContentLoaded", () => {
@@ -138,4 +138,5 @@ document.addEventListener('DOMContentLoaded', () => {
       headerText.style.transform = 'translateY(0)';
     }
   }, 300);
+
 });
